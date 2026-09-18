@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bigga Tea — Bahamian music, Junkanoo, rake 'n' scrape and Muh Buiy Dem Entertainment.">
+<title>Bigga Tea | Bahamian Roots. Nassau Sound.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sea:#0b7285;
+  --deep:#073b4c;
+  --lagoon:#159aab;
+  --sand:#f6f0df;
+  --paper:#fffdf7;
+  --coral:#df765f;
+  --mango:#e7a93b;
+  --ink:#19303a;
+  --muted:#63767d;
+  --line:#d9e0dc;
+  --shadow:0 18px 50px rgba(7,59,76,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--sand);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,calc(100% - 40px));margin:auto}
+.topbar{background:var(--deep);color:#eaf6f7;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.topbar .container{display:flex;justify-content:space-between;gap:16px;padding:9px 0}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,253,247,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(217,224,220,.85)}
+.navin{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brandmark{width:38px;height:38px;border-radius:50%;background:var(--sea);color:white;display:grid;place-items:center;font-family:"Playfair Display",serif;font-weight:800;font-size:18px;box-shadow:0 7px 18px rgba(11,114,133,.25)}
+.brandtext strong{display:block;font-family:"Playfair Display",serif;font-size:21px;line-height:1}
+.brandtext span{display:block;font-family:"Space Mono",monospace;font-size:9px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+.navlinks{display:flex;gap:24px;color:#48616a;font-size:14px;font-weight:600}
+.navlinks a:hover{color:var(--sea)}
+.navcta{background:var(--coral);color:white;padding:10px 15px;border-radius:999px;font-weight:700;font-size:13px;box-shadow:0 8px 18px rgba(223,118,95,.22)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#fffdf7 0%,#f8f3e5 58%,#e8f5f5 100%);border-bottom:1px solid var(--line)}
+.hero::after{content:"";position:absolute;right:-120px;bottom:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(21,154,171,.18),transparent 67%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:72px 0 56px;position:relative;z-index:1}
+.kicker{display:inline-flex;align-items:center;gap:9px;color:var(--sea);font-family:"Space Mono",monospace;font-size:11px;text-transform:uppercase;letter-spacing:.09em}
+.dot{width:7px;height:7px;background:var(--mango);border-radius:50%}
+h1{font-family:"Playfair Display",serif;font-size:clamp(54px,8vw,92px);line-height:.94;margin:15px 0 12px;color:var(--deep);letter-spacing:-.04em}
+.hero h1 em{color:var(--coral);font-style:normal}
+.subtitle{font-size:clamp(20px,2.5vw,30px);color:#315864;font-family:"Playfair Display",serif;margin:0 0 20px}
+.lead{font-size:18px;line-height:1.75;color:#536a72;max-width:620px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border-radius:8px;font-weight:700;font-size:14px;border:1px solid transparent}
+.btn-primary{background:var(--sea);color:white;box-shadow:0 10px 24px rgba(11,114,133,.18)}
+.btn-secondary{border-color:#b9cbc9;background:rgba(255,255,255,.65);color:var(--deep)}
+.btn:hover{transform:translateY(-1px)}
+.hero-art{position:relative;min-height:450px;display:grid;place-items:center}
+.sun{position:absolute;width:310px;height:310px;border-radius:50%;background:radial-gradient(circle at 44% 40%,#ffd98b 0%,#efbd56 42%,#e7a93b 70%,rgba(231,169,59,.08) 71%);top:38px;right:40px}
+.island{position:absolute;bottom:46px;left:24px;right:12px;height:170px}
+.wave{position:absolute;left:0;right:0;height:86px;border-radius:50%;background:var(--sea);transform:skewY(-3deg)}
+.wave.w1{bottom:30px;opacity:.95}
+.wave.w2{bottom:6px;background:#39aeb8;opacity:.88;transform:skewY(3deg)}
+.palm{position:absolute;left:20%;bottom:80px;width:18px;height:170px;background:var(--deep);border-radius:12px;transform:rotate(10deg)}
+.palm:before,.palm:after{content:"";position:absolute;width:120px;height:36px;background:var(--deep);border-radius:120% 0 120% 0;transform-origin:0 50%}
+.palm:before{top:0;left:2px;transform:rotate(-26deg)}
+.palm:after{top:18px;left:0;transform:rotate(34deg)}
+.palm2{position:absolute;right:23%;bottom:90px;width:13px;height:115px;background:var(--deep);border-radius:10px;transform:rotate(-8deg)}
+.palm2:before{content:"";position:absolute;top:-4px;left:0;width:92px;height:28px;background:var(--deep);border-radius:120% 0 120% 0;transform-origin:0 50%;transform:rotate(-34deg)}
+.card{background:rgba(255,255,255,.82);border:1px solid rgba(217,224,220,.9);border-radius:18px;box-shadow:var(--shadow)}
+.island-note{position:absolute;bottom:6px;right:0;background:white;border:1px solid var(--line);border-radius:14px;padding:14px 16px;width:220px;box-shadow:0 16px 35px rgba(7,59,76,.12)}
+.island-note .mono{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--sea)}
+.island-note strong{display:block;font-family:"Playfair Display",serif;font-size:23px;color:var(--deep);margin-top:4px}
+section{padding:76px 0}
+.section-kicker{font-family:"Space Mono",monospace;color:var(--sea);font-size:11px;text-transform:uppercase;letter-spacing:.10em}
+.section-title{font-family:"Playfair Display",serif;font-size:clamp(32px,4vw,48px);color:var(--deep);margin:8px 0 14px}
+.section-copy{color:var(--muted);max-width:720px;font-size:17px}
+.rule{height:1px;background:var(--line);margin:26px 0 0}
+.feature{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:stretch}
+.feature-main{padding:34px;background:var(--deep);color:white;border-radius:18px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.feature-main:after{content:"";position:absolute;width:240px;height:240px;right:-80px;top:-80px;border-radius:50%;border:1px solid rgba(255,255,255,.16);box-shadow:0 0 0 22px rgba(255,255,255,.03),0 0 0 44px rgba(255,255,255,.025)}
+.feature-tag{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8fe0e6}
+.feature-main h3{font-family:"Playfair Display",serif;font-size:40px;line-height:1.05;margin:15px 0 10px;max-width:490px}
+.feature-main p{color:#cfe0e2;max-width:590px;font-size:16px}
+.platforms{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.platform{padding:10px 13px;border:1px solid rgba(255,255,255,.18);border-radius:999px;font-size:12px;color:#f7ffff;background:rgba(255,255,255,.05)}
+.platform:hover{background:rgba(255,255,255,.12)}
+.live-links{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.live-card{padding:24px;background:#fffdf8;border:1px solid var(--line);border-radius:15px}
+.live-card .ey{font-family:"Space Mono",monospace;font-size:9px;color:var(--coral);letter-spacing:.08em;text-transform:uppercase}
+.live-card h4{font-family:"Playfair Display",serif;font-size:25px;margin:7px 0;color:var(--deep)}
+.live-card p{color:var(--muted);font-size:14px;margin:0 0 13px}
+.textlink{color:var(--sea);font-weight:800;font-size:13px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.pullquote{padding:33px;background:#e7f5f5;border-left:5px solid var(--sea);border-radius:0 16px 16px 0}
+.pullquote blockquote{font-family:"Playfair Display",serif;font-size:26px;line-height:1.35;color:var(--deep);margin:0}
+.pullquote cite{display:block;margin-top:14px;font-family:"Space Mono",monospace;font-size:10px;color:#53717a;text-transform:uppercase;letter-spacing:.07em}
+.facts{padding:30px;background:#fffdf8;border:1px solid var(--line);border-radius:16px}
+.fact{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}.fact:last-child{border-bottom:0}.fact span:first-child{color:var(--muted)}.fact span:last-child{font-weight:700;color:var(--deep);text-align:right}
+.releases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.release{padding:23px;background:#fffdf8;border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 22px rgba(7,59,76,.04)}
+.release .num{font-family:"Space Mono",monospace;color:var(--coral);font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.release h4{font-family:"Playfair Display",serif;color:var(--deep);font-size:25px;margin:11px 0 8px}
+.release p{font-size:14px;color:var(--muted);min-height:62px}
+.release a{display:inline-flex;margin-top:8px}
+.press-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.press{padding:25px;background:white;border:1px solid var(--line);border-radius:16px}
+.press .source{font-family:"Space Mono",monospace;color:var(--coral);font-size:10px;text-transform:uppercase;letter-spacing:.09em}
+.press h4{font-family:"Playfair Display",serif;color:var(--deep);font-size:25px;margin:8px 0}
+.press p{font-size:14px;color:var(--muted)}
+.booking{background:var(--deep);color:white;border-radius:22px;padding:44px;position:relative;overflow:hidden}.booking:after{content:"";position:absolute;inset:auto -80px -100px auto;width:380px;height:220px;border-radius:50%;background:rgba(57,174,184,.18)}
+.booking h2{font-family:"Playfair Display",serif;font-size:44px;margin:4px 0 8px}.booking p{color:#c9dfe2;max-width:650px}.book-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.book-actions .btn-primary{background:var(--mango);color:var(--deep)}
+footer{background:#062d3a;color:#c0d5d8;padding:30px 0;margin-top:76px}.footerin{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.footerin strong{font-family:"Playfair Display",serif;color:white;font-size:23px}.small{font-size:12px;color:#91b0b5;max-width:580px}.source-note{margin-top:12px;font-size:10px;color:#78999f}
+@media(max-width:850px){.hero-grid,.feature,.two{grid-template-columns:1fr}.hero-art{min-height:370px}.navlinks{display:none}.releases{grid-template-columns:1fr}.press-grid{grid-template-columns:1fr}.footerin{flex-direction:column}.live-links{grid-template-columns:1fr}}
+@media(max-width:600px){.container{width:min(100% - 28px,1120px)}.topbar .container{flex-direction:column;gap:2px}.hero-grid{padding-top:48px}.hero-art{min-height:310px}.sun{width:230px;height:230px;right:20px}.booking{padding:30px 24px}.booking h2{font-size:35px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Nassau, The Bahamas</span><span>Authentic Bahamian Sound • Junkanoo • Rake 'n' Scrape</span></div></div>
+<nav>
+  <div class="container navin">
+    <a class="brand" href="#top" aria-label="Bigga Tea home">
+      <div class="brandmark">BT</div>
+      <div class="brandtext"><strong>Bigga Tea</strong><span>Trevor Taylor • Muh Buiy Dem</span></div>
+    </a>
+    <div class="navlinks"><a href="#story">Story</a><a href="#music">Music</a><a href="#culture">Culture</a><a href="#press">Press</a><a href="#booking">Booking</a></div>
+    <a class="navcta" href="#music">Listen</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker"><span class="dot"></span> Bahamian artist • songwriter • cultural voice</div>
+      <h1>BIGGA <em>TEA</em></h1>
+      <p class="subtitle">Trevor Taylor &amp; Muh Buiy Dem Entertainment</p>
+      <p class="lead">Music rooted in Bahamian dialect, Junkanoo rhythm, rake 'n' scrape and the character of island life — made to sound like home.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#music">Hear the music</a>
+        <a class="btn btn-secondary" href="#booking">Book / inquire</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="island"><div class="palm"></div><div class="palm2"></div><div class="wave w1"></div><div class="wave w2"></div></div>
+      <div class="island-note"><div class="mono">Island sound</div><strong>Roots first.</strong><div style="font-size:13px;color:#63767d;margin-top:4px">Nassau • The Bahamas</div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="story">
+  <div class="container">
+    <div class="section-kicker">01 / The story</div>
+    <h2 class="section-title">A sound with somewhere to come from.</h2>
+    <p class="section-copy">Bigga Tea has long advocated for music that feels unmistakably Bahamian. In a 2012 Tribune profile, he described Muy Buiy Dem's sound as deliberately rooted in local dialect and indigenous instruments, including rake 'n' scrape, cowbells and drums. The group came together in 1995 and was later registered as an international music publishing company and record label.</p>
+    <div class="rule"></div>
+    <div class="two" style="margin-top:28px">
+      <div class="pullquote"><blockquote>“Regatta Time” was described as a true Bahamian regatta experience — mailboats, island hospitality and the excitement of sloop racing.</blockquote><cite>Documented in The Tribune, 2012</cite></div>
+      <div class="facts">
+        <div class="fact"><span>Artist</span><span>Bigga Tea / Trevor Taylor</span></div>
+        <div class="fact"><span>Collective</span><span>Muh Buiy Dem Entertainment</span></div>
+        <div class="fact"><span>Roots</span><span>Junkanoo • Rake 'n' Scrape</span></div>
+        <div class="fact"><span>Founded</span><span>1995</span></div>
+        <div class="fact"><span>Home</span><span>Nassau, The Bahamas</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="music" style="background:#fbf8ee;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-kicker">02 / Listen</div>
+    <h2 class="section-title">Music, connected to the live web.</h2>
+    <p class="section-copy">The original page used a simulated audio player with no actual recording behind it. This version does not pretend to play a file it cannot verify. Instead, the buttons below open live music searches on the major platforms, so the site stays useful without embedding a fake player.</p>
+    <div class="feature" style="margin-top:28px">
+      <div class="feature-main">
+        <div class="feature-tag">Featured work</div>
+        <h3>Regatta Time</h3>
+        <p>The song was associated with the National Regatta Song Competition and was produced by Owen “Ovadosa” Davis and Trevor “Bigga-tea” Taylor. The documentary record differs from the old page's wording, which described Bigga Tea as the winner; the published source identifies Don “Bahamadon” Rolle as the competition winner and credits Ovadosa and Bigga Tea with production.</p>
+        <div class="platforms">
+          <a class="platform" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Bigga+Tea+Regatta+Time">▶ YouTube search</a>
+          <a class="platform" target="_blank" rel="noopener" href="https://open.spotify.com/search/Bigga%20Tea%20Regatta%20Time">♫ Spotify search</a>
+          <a class="platform" target="_blank" rel="noopener" href="https://music.apple.com/us/search?term=Bigga%20Tea%20Regatta%20Time">♪ Apple Music search</a>
+          <a class="platform" target="_blank" rel="noopener" href="https://soundcloud.com/search?q=Bigga%20Tea">● SoundCloud search</a>
+        </div>
+      </div>
+      <div class="live-links">
+        <article class="live-card"><div class="ey">Live source</div><h4>The Tribune</h4><p>Read the 2012 feature on Muy Buiy Dem, the group's cultural mission and “Regatta Time.”</p><a class="textlink" target="_blank" rel="noopener" href="https://www.tribune242.com/news/2012/sep/26/muy-buiy-dem-releases-new-junkanoo-beat/">Read article →</a></article>
+        <article class="live-card"><div class="ey">Reference</div><h4>National Regatta history</h4><p>See the published historical account of the National Regatta Song Competition and the “Regatta Time” credits.</p><a class="textlink" target="_blank" rel="noopener" href="https://static1.squarespace.com/static/597f5390d7bdce037b3a97ff/t/663971f1825907610c2fbfa4/1715040831662/MASTERS%2BOF%2BSEA%2BMOAMR2020%2BVER238%2B.pdf">Open source →</a></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="culture">
+  <div class="container">
+    <div class="section-kicker">03 / Culture</div>
+    <h2 class="section-title">Junkanoo, dialect, rhythm.</h2>
+    <p class="section-copy">The heart of the story is cultural specificity. The 2012 Tribune piece describes Muy Buiy Dem's approach as an effort to keep Bahamian musical identity present year-round, using indigenous sounds and Bahamian dialect rather than simply imitating outside styles.</p>
+    <div class="releases" style="margin-top:30px">
+      <article class="release"><div class="num">Sound</div><h4>Junkanoo rhythm</h4><p>Cowbells, drums and rake 'n' scrape are part of the sonic vocabulary discussed in the group's own cultural mission.</p><a class="textlink" target="_blank" rel="noopener" href="https://www.tribune242.com/news/2012/sep/26/muy-buiy-dem-releases-new-junkanoo-beat/">Source →</a></article>
+      <article class="release"><div class="num">Language</div><h4>Bahamian dialect</h4><p>The group's stated goal was not simply to make Caribbean music, but to keep Bahamian speech and identity audible inside it.</p><a class="textlink" target="_blank" rel="noopener" href="https://www.tribune242.com/news/2012/sep/26/muy-buiy-dem-releases-new-junkanoo-beat/">Source →</a></article>
+      <article class="release"><div class="num">Community</div><h4>Island life</h4><p>“Regatta Time” was framed around mailboats, island hospitality and the competition and memories surrounding native sloop racing.</p><a class="textlink" target="_blank" rel="noopener" href="https://static1.squarespace.com/static/597f5390d7bdce037b3a97ff/t/663971f1825907610c2fbfa4/1715040831662/MASTERS%2BOF%2BSEA%2BMOAMR2020%2BVER238%2B.pdf">Source →</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="press" style="padding-top:18px">
+  <div class="container">
+    <div class="section-kicker">04 / In the record</div>
+    <h2 class="section-title">A few places to keep exploring.</h2>
+    <div class="press-grid" style="margin-top:26px">
+      <article class="press"><div class="source">The Tribune • 2012</div><h4>Muy Buiy Dem releases new Junkanoo beat</h4><p>A useful portrait of the group's cultural purpose, members and releases — including “Regatta Time” and “It Ruff Around Here.”</p><a class="textlink" target="_blank" rel="noopener" href="https://www.tribune242.com/news/2012/sep/26/muy-buiy-dem-releases-new-junkanoo-beat/">Open live source →</a></article>
+      <article class="press"><div class="source">National Regatta history</div><h4>Regatta Time competition record</h4><p>The published history identifies Don “Bahamadon” Rolle as the competition winner and credits Owen “Ovadosa” Davis and Trevor “Bigga-tea” Taylor with production.</p><a class="textlink" target="_blank" rel="noopener" href="https://static1.squarespace.com/static/597f5390d7bdce037b3a97ff/t/663971f1825907610c2fbfa4/1715040831662/MASTERS%2BOF%2BSEA%2BMOAMR2020%2BVER238%2B.pdf">Open live source →</a></article>
+    </div>
+    <div class="card" style="padding:26px;margin-top:18px">
+      <div class="section-kicker" style="color:var(--coral)">Social / live media</div>
+      <h3 style="font-family:'Playfair Display',serif;color:var(--deep);font-size:28px;margin:5px 0">Keep the artist's own feeds at the center.</h3>
+      <p style="color:var(--muted);max-width:760px;margin:0 0 16px">I did not find a reliably indexed official artist Instagram, Facebook or YouTube URL in the public sources I could verify, so I have intentionally used live search links rather than inventing account handles. Replace these with the artist's exact profiles when you have them.</p>
+      <div class="actions" style="margin-top:0">
+        <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://www.facebook.com/search/top?q=Bigga%20Tea%20Bahamas">Facebook search</a>
+        <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://www.instagram.com/explore/search/keyword/?q=bigga%20tea">Instagram search</a>
+        <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Bigga+Tea+Bahamas">YouTube search</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="container">
+    <div class="booking">
+      <div class="section-kicker" style="color:#8fe0e6">05 / Booking</div>
+      <h2>Bring the sound home.</h2>
+      <p>For performances, cultural events, festivals, regattas or other appearances, point the visitor to the artist's actual booking contact here. The links below are placeholders until Bigga Tea's preferred contact details are supplied.</p>
+      <div class="book-actions">
+        <a class="btn btn-primary" href="mailto:booking@example.com?subject=Bigga%20Tea%20Booking%20Inquiry">Email booking</a>
+        <a class="btn btn-secondary" style="background:rgba(255,255,255,.08);color:white;border-color:rgba(255,255,255,.2)" href="https://www.tribune242.com/news/2012/sep/26/muy-buiy-dem-releases-new-junkanoo-beat/" target="_blank" rel="noopener">Read the story</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="container footerin">
+    <div><strong>BIGGA TEA</strong><div class="small">Trevor Taylor • Muh Buiy Dem Entertainment • Nassau, The Bahamas</div><div class="source-note">Research links are live external sources. Replace the placeholder booking email and social-search buttons with the artist's preferred official contacts when available.</div></div>
+    <div class="small" style="text-align:right">Bahamian roots. Island rhythm. A sound of its own.</div>
+  </div>
+</footer>
+</body>
+</html>

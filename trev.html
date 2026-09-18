@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigga Tea (Trevor Taylor) | Muh Buiy Dem Entertainment | Official Site</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Syne, Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bahama: {
+                            gold: '#f59e0b',
+                            teal: '#0d9488',
+                            blue: '#0284c7',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Syne', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-teal-500 selection:text-zinc-950 min-h-screen flex flex-col justify-between">
+
+    <!-- Ambient Glow / Background Overlay -->
+    <div class="fixed inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(13,148,136,0.15),rgba(255,255,255,0))] pointer-events-none"></div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 border-b border-zinc-800/80 bg-zinc-950/85 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Artist Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <span class="font-display font-extrabold text-2xl tracking-tighter text-teal-400 group-hover:text-teal-300 transition-colors">BIGGA TEA</span>
+                <span class="text-xs font-mono text-zinc-500 border-l border-zinc-800 pl-3 hidden sm:inline">MUH BUIY DEM // NASSAU, BS</span>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-mono tracking-wider uppercase text-zinc-400">
+                <a href="#mission" class="hover:text-teal-400 transition-colors">/Mission</a>
+                <a href="#music" class="hover:text-teal-400 transition-colors">/Discography</a>
+                <a href="#culture" class="hover:text-teal-400 transition-colors">/Junkanoo</a>
+                <a href="#booking" class="hover:text-teal-400 transition-colors">/Booking</a>
+            </nav>
+
+            <!-- Action Button -->
+            <a href="#music" class="px-4 py-2 rounded-full bg-teal-500 text-zinc-950 font-mono text-xs font-bold uppercase tracking-wider hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/20">
+                Listen Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Stream -->
+    <main class="relative z-10 max-w-7xl mx-auto px-6 space-y-24 py-12 flex-grow">
+
+        <!-- Hero Section -->
+        <section class="grid lg:grid-cols-12 gap-12 items-center pt-6 min-h-[70vh]">
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full border border-teal-500/30 bg-teal-500/10 text-teal-400 text-xs font-mono">
+                    <span class="w-2 h-2 rounded-full bg-teal-400 animate-ping"></span>
+                    <span>NATIONAL REGATTA SONG WINNER // THE BAHAMAS</span>
+                </div>
+
+                <div class="space-y-2">
+                    <h1 class="text-5xl sm:text-7xl font-display font-extrabold tracking-tight uppercase leading-none text-zinc-100">
+                        BIGGA TEA<span class="text-teal-400">.</span>
+                    </h1>
+                    <p class="text-2xl sm:text-3xl font-light text-amber-400 tracking-tight font-display">
+                        Trevor Taylor &amp; Muh Buiy Dem Entertainment
+                    </p>
+                </div>
+
+                <p class="max-w-xl text-zinc-400 text-base leading-relaxed">
+                    Preserving pure Bahamian dialect, goat-skin drums, cowbells, and rake 'n' scrape. Defending authentic island culture through powerful Junkanoo rhythms and award-winning storytelling.
+                </p>
+
+                <!-- Hero CTAs -->
+                <div class="flex flex-wrap gap-4 pt-2 font-mono text-xs">
+                    <a href="#music" class="px-6 py-3.5 bg-teal-500 text-zinc-950 font-bold uppercase tracking-widest rounded hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/20">
+                        Explore Catalog
+                    </a>
+                    <a href="#booking" class="px-6 py-3.5 border border-zinc-800 bg-zinc-900/60 text-zinc-300 hover:text-zinc-100 hover:border-zinc-700 font-bold uppercase tracking-widest rounded transition-colors">
+                        Book Performance
+                    </a>
+                </div>
+            </div>
+
+            <!-- Vector Poster Graphic -->
+            <div class="lg:col-span-5 relative">
+                <div class="aspect-[4/5] bg-gradient-to-b from-zinc-900 via-zinc-950 to-zinc-950 border border-teal-500/30 rounded-2xl p-6 flex flex-col justify-between overflow-hidden relative shadow-2xl">
+                    <!-- Embedded Junkanoo Drum Graphics -->
+                    <div class="absolute inset-0 flex items-center justify-center opacity-25 pointer-events-none">
+                        <svg width="320" height="320" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="85" stroke="#0d9488" stroke-width="2" stroke-dasharray="6 6" />
+                            <circle cx="100" cy="100" r="65" stroke="#f59e0b" stroke-width="1.5" />
+                            <polygon points="100,20 120,80 180,100 120,120 100,180 80,120 20,100 80,80" stroke="#0d9488" stroke-opacity="0.3" stroke-width="1" />
+                        </svg>
+                    </div>
+
+                    <div class="flex justify-between items-start z-10">
+                        <span class="font-mono text-xs text-amber-400 tracking-widest uppercase">// AUTHENTIC BAHAMIAN SOUND</span>
+                        <span class="font-mono text-xs text-zinc-500">EST. 1995</span>
+                    </div>
+
+                    <!-- Centerpiece -->
+                    <div class="my-auto text-center z-10 space-y-3">
+                        <div class="inline-block p-4 rounded-full bg-teal-500/10 border border-teal-500/30 mb-2">
+                            <svg class="w-12 h-12 text-teal-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12 0c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                            </svg>
+                        </div>
+                        <div class="font-display font-extrabold text-3xl uppercase tracking-wider text-zinc-100">TREVOR TAYLOR</div>
+                        <div class="font-mono text-xs text-teal-400 uppercase tracking-widest">A.K.A. BIGGA TEA</div>
+                    </div>
+
+                    <div class="border-t border-zinc-800/80 pt-4 flex justify-between items-center text-xs font-mono text-zinc-500 z-10">
+                        <span>MUH BUIY DEM ENTERTAINMENT</span>
+                        <span class="text-amber-400 font-semibold">JUNKANOO / RAKE 'N' SCRAPE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audio Player Section: Featured Single -->
+        <section id="music-player" class="bg-gradient-to-r from-zinc-900 via-zinc-900/90 to-zinc-900 border border-zinc-800 rounded-2xl p-8 sm:p-12 shadow-xl">
+            <div class="grid md:grid-cols-12 gap-8 items-center">
+                <!-- Single Cover Art Graphic -->
+                <div class="md:col-span-5 aspect-square bg-zinc-950 border border-teal-500/40 rounded-xl flex flex-col justify-between p-8 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-teal-500/20 via-transparent to-amber-500/10"></div>
+                    <div class="flex justify-between items-center z-10">
+                        <span class="font-mono text-xs text-amber-400 uppercase tracking-widest">// AWARD WINNING SINGLE</span>
+                        <span class="font-mono text-xs text-zinc-500">NATIONAL WINNER</span>
+                    </div>
+                    <div class="z-10 space-y-1">
+                        <div class="font-display text-4xl font-extrabold uppercase text-zinc-100">Regatta Time</div>
+                        <div class="text-sm text-teal-400 font-mono">Bigga Tea &amp; Ovadosa</div>
+                    </div>
+                </div>
+
+                <!-- Track Info & Controls -->
+                <div class="md:col-span-7 space-y-6">
+                    <span class="text-xs font-mono text-amber-400 uppercase tracking-widest">Featured Track Spotlight</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-zinc-100">"Regatta Time"</h2>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Winner of the Ministry of Youth, Sports and Culture's National Regatta Song Competition. Produced by Owen "Ovadosa" Davis and Trevor "Bigga Tea" Taylor, capturing the authentic spirit of mailboats, sailing competitions, and island hospitality.
+                    </p>
+
+                    <!-- Interactive Waveform Player -->
+                    <div class="bg-zinc-950 border border-zinc-800 p-5 rounded-xl space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <button id="playBtn" onclick="togglePlay()" class="w-12 h-12 rounded-full bg-teal-500 text-zinc-950 flex items-center justify-center font-bold text-lg hover:scale-105 transition-transform shrink-0">
+                                &#9654;
+                            </button>
+                            <div class="flex-grow space-y-2">
+                                <div class="flex justify-between text-xs font-mono text-zinc-400">
+                                    <span id="trackTitle">Regatta Time - Bigga Tea</span>
+                                    <span id="trackTime">0:00 / 3:45</span>
+                                </div>
+                                <!-- Visual Waveform -->
+                                <div class="flex items-end space-x-1 h-8 px-1">
+                                    <div class="w-1 bg-teal-500/40 h-3 rounded"></div>
+                                    <div class="w-1 bg-teal-500/60 h-6 rounded"></div>
+                                    <div class="w-1 bg-teal-500 h-8 rounded"></div>
+                                    <div class="w-1 bg-amber-400 h-5 rounded"></div>
+                                    <div class="w-1 bg-teal-500/50 h-3 rounded"></div>
+                                    <div class="w-1 bg-teal-500/90 h-7 rounded"></div>
+                                    <div class="w-1 bg-teal-500 h-4 rounded"></div>
+                                    <div class="w-1 bg-amber-400/80 h-6 rounded"></div>
+                                    <div class="w-1 bg-teal-500/30 h-2 rounded"></div>
+                                    <div class="w-1 bg-teal-500/80 h-7 rounded"></div>
+                                    <div class="w-1 bg-teal-500 h-5 rounded"></div>
+                                    <div class="w-1 bg-teal-500/60 h-3 rounded"></div>
+                                    <div class="w-1 bg-amber-400 h-8 rounded"></div>
+                                    <div class="w-1 bg-teal-500/50 h-4 rounded"></div>
+                                    <div class="w-1 bg-teal-500/70 h-6 rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cultural Mission Statement -->
+        <section id="mission" class="space-y-8">
+            <div class="border-b border-zinc-800 pb-4">
+                <h2 class="text-xs font-mono text-teal-400 uppercase tracking-widest">// Cultural Philosophy</h2>
+                <p class="text-2xl font-semibold text-zinc-100 mt-1">Preserving Authentic Bahamian Rhythms</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 text-zinc-400 leading-relaxed font-light">
+                <div class="space-y-4">
+                    <p>
+                        <strong class="text-zinc-200">Bigga Tea (Trevor Taylor)</strong> and the collective <strong class="text-zinc-200">Muh Buiy Dem Entertainment</strong> stand as guardians of true Bahamian sound. In a music landscape often diluted by external influences, Bigga Tea champions the unadulterated use of authentic dialect, cowbells, goat-skin drums, and rake 'n' scrape.
+                    </p>
+                    <p>
+                        "Junkanoo is almost two hundred years old, and in a time when the world is looking for real roots and culture, we must celebrate our own." — Bigga Tea
+                    </p>
+                </div>
+
+                <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-8 space-y-5 font-mono text-xs">
+                    <div class="flex justify-between border-b border-zinc-800/80 pb-3">
+                        <span class="text-zinc-500">ARTIST NAME</span>
+                        <span class="text-teal-400 font-bold">BIGGA TEA</span>
+                    </div>
+                    <div class="flex justify-between border-b border-zinc-800/80 pb-3">
+                        <span class="text-zinc-500">GIVEN NAME</span>
+                        <span class="text-zinc-200">TREVOR TAYLOR</span>
+                    </div>
+                    <div class="flex justify-between border-b border-zinc-800/80 pb-3">
+                        <span class="text-zinc-500">RECORD LABEL</span>
+                        <span class="text-zinc-200">MUH BUIY DEM ENTERTAINMENT</span>
+                    </div>
+                    <div class="flex justify-between border-b border-zinc-800/80 pb-3">
+                        <span class="text-zinc-500">KEY INSTRUMENTS</span>
+                        <span class="text-amber-400">COWBELLS, GOAT-SKIN DRUMS, SAW</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discography Grid -->
+        <section id="music" class="space-y-8">
+            <div class="border-b border-zinc-800 pb-4 flex justify-between items-end">
+                <div>
+                    <h2 class="text-xs font-mono text-teal-400 uppercase tracking-widest">// Discography</h2>
+                    <p class="text-2xl font-semibold text-zinc-100 mt-1">Releases &amp; Key Works</p>
+                </div>
+                <span class="text-xs font-mono text-zinc-500 hidden sm:block">MUH BUIY DEM CATALOG</span>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Song 1 -->
+                <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-6 hover:border-teal-500/50 transition-colors space-y-4">
+                    <div class="aspect-square bg-zinc-950 rounded-lg flex flex-col justify-between p-6 border border-zinc-800">
+                        <span class="font-mono text-xs text-amber-400">01 // WINNER</span>
+                        <div class="font-display text-2xl font-bold uppercase text-zinc-200">Regatta Time</div>
+                        <span class="font-mono text-[10px] text-zinc-500">NATIONAL REGATTA SONG</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs font-mono">
+                        <span class="text-zinc-300">Bigga Tea &amp; Ovadosa</span>
+                        <span class="text-teal-400">National Award</span>
+                    </div>
+                </div>
+
+                <!-- Song 2 -->
+                <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-6 hover:border-teal-500/50 transition-colors space-y-4">
+                    <div class="aspect-square bg-zinc-950 rounded-lg flex flex-col justify-between p-6 border border-zinc-800">
+                        <span class="font-mono text-xs text-teal-400">02 // COLLAB</span>
+                        <div class="font-display text-2xl font-bold uppercase text-zinc-200">Finance Man</div>
+                        <span class="font-mono text-[10px] text-zinc-500">FT. EDDIE MINNIS</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs font-mono">
+                        <span class="text-zinc-300">Eddie Minnis ft. Muh Buiy Dem</span>
+                        <span class="text-teal-400">Muddoe Music</span>
+                    </div>
+                </div>
+
+                <!-- Song 3 -->
+                <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-6 hover:border-teal-500/50 transition-colors space-y-4">
+                    <div class="aspect-square bg-zinc-950 rounded-lg flex flex-col justify-between p-6 border border-zinc-800">
+                        <span class="font-mono text-xs text-teal-400">03 // SINGLE</span>
+                        <div class="font-display text-2xl font-bold uppercase text-zinc-200">It Ruff Around Here</div>
+                        <span class="font-mono text-[10px] text-zinc-500">CULTURAL SINGLE</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs font-mono">
+                        <span class="text-zinc-300">Bigga Tea &amp; Muh Buiy Dem</span>
+                        <span class="text-teal-400">Single</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Inquiry Form -->
+        <section id="booking" class="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-8 sm:p-12 space-y-8">
+            <div>
+                <h2 class="text-xs font-mono text-teal-400 uppercase tracking-widest">// Direct Contact</h2>
+                <p class="text-2xl font-semibold text-zinc-100 mt-1">Book Bigga Tea &amp; Muh Buiy Dem</p>
+            </div>
+
+            <form class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="text-xs font-mono text-zinc-400 uppercase">Organizer / Name</label>
+                        <input type="text" placeholder="Your Name" class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-3 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-teal-400 font-mono text-sm" />
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-mono text-zinc-400 uppercase">Contact Email</label>
+                        <input type="email" placeholder="contact@domain.com" class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-3 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-teal-400 font-mono text-sm" />
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-xs font-mono text-zinc-400 uppercase">Performance or Festival Details</label>
+                    <textarea rows="4" placeholder="Regatta, Junkanoo festival, cultural event details..." class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-3 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-teal-400 font-mono text-sm"></textarea>
+                </div>
+
+                <button type="button" class="px-8 py-4 bg-teal-500 text-zinc-950 font-mono text-xs font-bold uppercase tracking-widest rounded hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/20">
+                    Send Booking Inquiry
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-zinc-800/80 bg-zinc-950 py-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono text-zinc-500">
+            <div>&copy; Bigga Tea (Trevor Taylor) &amp; Muh Buiy Dem Entertainment. Nassau, The Bahamas.</div>
+            <div class="text-teal-400">Authentic Junkanoo &amp; Rake 'N' Scrape Movement</div>
+        </div>
+    </footer>
+
+    <!-- Audio Player Toggle Script -->
+    <script>
+        let isPlaying = false;
+        function togglePlay() {
+            const btn = document.getElementById('playBtn');
+            const time = document.getElementById('trackTime');
+            isPlaying = !isPlaying;
+            if(isPlaying) {
+                btn.innerHTML = "&#10074;&#10074;";
+                time.innerText = "1:15 / 3:45";
+            } else {
+                btn.innerHTML = "&#9654;";
+                time.innerText = "0:00 / 3:45";
+            }
+        }
+    </script>
+</body>
+</html>
