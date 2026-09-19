@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahamas Web Services | Web Architecture & IT Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-slate-200 font-sans antialiased selection:bg-slate-800 selection:text-teal-400 min-h-screen flex flex-col justify-between">
+
+    <!---- Subtle Technical Background Grid -->
+    <div class="fixed inset-0 bg-[linear-gradient(to_right,#33415520_1px,transparent_1px),linear-gradient(to_bottom,#33415520_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
+
+    <!-- Header / Navigation -->
+    <header class="relative z-10 border-b border-slate-800/80 bg-slate-900/90 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center space-x-3">
+                <span class="inline-block w-2.5 h-2.5 bg-teal-500 rounded-full animate-pulse"></span>
+                <span class="font-mono text-sm tracking-wider uppercase font-semibold text-slate-100">Bahamas Web Services</span>
+            </div>
+            <nav class="flex items-center space-x-6 text-xs font-mono text-slate-400">
+                <a href="#managed-web" class="hover:text-slate-100 transition-colors">web-packages</a>
+                <a href="#it-services" class="hover:text-slate-100 transition-colors">it-consulting</a>
+                <a href="#contact" class="hover:text-slate-100 transition-colors">contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="relative z-10 max-w-6xl mx-auto px-6 py-16 space-y-20 flex-grow">
+
+        <!-- Hero Section -->
+        <section class="max-w-3xl space-y-6">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-slate-800 bg-slate-950/60 text-xs font-mono text-teal-400">
+                <span>SYSTEM STATUS: ONLINE</span>
+                <span class="text-slate-600">&#124;</span>
+                <span>NASSAU, THE BAHAMAS</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-100 leading-tight">
+                Web Architecture & Infrastructure for Local Enterprise.
+            </h1>
+            <p class="text-slate-400 text-lg leading-relaxed font-light">
+                Transparent pricing, direct engineering, and reliable infrastructure management. Built for Nassau businesses that demand performance without fluff.
+            </p>
+        </section>
+
+        <!-- Web Development & Hosting Packages -->
+        <section id="managed-web" class="space-y-8">
+            <div class="border-b border-slate-800 pb-4 flex justify-between items-end">
+                <div>
+                    <h2 class="text-xs font-mono text-teal-400 uppercase tracking-widest">// Web Solutions</h2>
+                    <p class="text-2xl font-semibold text-slate-100 mt-1">Managed Development & Hosting</p>
+                </div>
+                <span class="font-mono text-xs text-slate-500 hidden sm:block">CURRENCY: USD / BSD</span>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Web Basic -->
+                <div class="bg-slate-950/60 border border-slate-800 rounded-lg p-8 flex flex-col justify-between hover:border-slate-700 transition-colors">
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-100">Web Basic</h3>
+                                <p class="text-xs font-mono text-slate-400 mt-1">Core Online Presence</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="font-mono text-2xl font-bold text-slate-100">$500.00</div>
+                                <div class="font-mono text-xs text-slate-400 mt-0.5">$50.00 / mo</div>
+                            </div>
+                        </div>
+                        
+                        <div class="h-px bg-slate-800/80 w-full"></div>
+
+                        <ul class="space-y-3 text-sm text-slate-300 font-mono">
+                            <li class="flex items-center space-x-3">
+                                <span class="text-teal-400">&bull;</span>
+                                <span>Website Creation</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="text-teal-400">&bull;</span>
+                                <span>Web Hosting Included</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="text-teal-400">&bull;</span>
+                                <span>Domain Registration</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="text-teal-400">&bull;</span>
+                                <span>Social Media Integration</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="text-teal-400">&bull;</span>
+                                <span>WhatsApp Call Function</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Web Pro -->
+                <div class="bg-slate-950/90 border border-teal-500/30 rounded-lg p-8 flex flex-col justify-between relative hover:border-teal-500/50 transition-colors">
+                    <div class="absolute -top-3 right-6 bg-teal-500 text-slate-950 text-[10px] font-mono font-bold uppercase px-2.5 py-0.5 rounded">
+                        Recommended
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-100">Web Pro</h3>
+                                <p class="text-xs font-mono text-teal-400 mt-1">Full Search & Business Setup</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="font-mono text-2xl font-bold text-slate-100">$1,000.00</div>
+                                <div class="font-mono text-xs text-teal-400 mt-0.5">$100.00 / mo</div>
+                            </div>
+                        </div>
+
+                        <div class="h-px bg-slate-800/80 w-full"></div>
+
+                        <ul class="space-y-3 text-sm text-slate-200 font-mono">
+                            <li class="flex items-center space-x-3 text-slate-400 font-sans text-xs uppercase tracking-wider">
+                                <span>Includes All Web Basic Features, plus:</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="text-teal-400">&bull;</span>
+                                <span>Google Maps & Business Integration</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="text-teal-400">&bull;</span>
+                                <span>Mobile Optimization</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="text-teal-400">&bull;</span>
+                                <span>Ongoing Technical Support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- On-Demand IT & Engineering Services -->
+        <section id="it-services" class="space-y-8">
+            <div class="border-b border-slate-800 pb-4">
+                <h2 class="text-xs font-mono text-teal-400 uppercase tracking-widest">// Technical Services</h2>
+                <p class="text-2xl font-semibold text-slate-100 mt-1">On-Demand IT & Infrastructure Support</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- IT Services Card -->
+                <div class="bg-slate-950/60 border border-slate-800 rounded-lg p-8 space-y-6">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-lg font-semibold text-slate-100">IT Services</h3>
+                        <span class="font-mono text-lg font-bold text-teal-400">$75 <span class="text-xs text-slate-400 font-normal">/ hr + parts</span></span>
+                    </div>
+                    <div class="h-px bg-slate-800/80 w-full"></div>
+                    <ul class="space-y-2.5 text-sm text-slate-300 font-mono">
+                        <li class="flex items-center space-x-3">
+                            <span class="text-slate-500">></span>
+                            <span>Computer Repair & Diagnostics</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-slate-500">></span>
+                            <span>Hardware & Network Repair</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- IT Consulting Card -->
+                <div class="bg-slate-950/60 border border-slate-800 rounded-lg p-8 space-y-6">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-lg font-semibold text-slate-100">IT Consulting</h3>
+                        <span class="font-mono text-lg font-bold text-teal-400">$100 <span class="text-xs text-slate-400 font-normal">/ hr</span></span>
+                    </div>
+                    <div class="h-px bg-slate-800/80 w-full"></div>
+                    <ul class="grid grid-cols-2 gap-2 text-sm text-slate-300 font-mono">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-slate-500">></span>
+                            <span>Network Security</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-slate-500">></span>
+                            <span>Firewalls</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-slate-500">></span>
+                            <span>SysAdmin</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-slate-500">></span>
+                            <span>Programming</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / Direct Inquiry -->
+        <section id="contact" class="bg-slate-950/70 border border-slate-800 rounded-lg p-8 sm:p-12 space-y-8">
+            <div>
+                <h2 class="text-xs font-mono text-teal-400 uppercase tracking-widest">// Contact</h2>
+                <p class="text-2xl font-semibold text-slate-100 mt-1">Initiate Service Request</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 font-mono text-sm">
+                <div>
+                    <div class="text-xs text-slate-500 uppercase tracking-wider mb-2">Location</div>
+                    <div class="text-slate-200">1 Winton Terrace</div>
+                    <div class="text-slate-400">Nassau, The Bahamas</div>
+                </div>
+
+                <div>
+                    <div class="text-xs text-slate-500 uppercase tracking-wider mb-2">Phone / WhatsApp</div>
+                    <div><a href="tel:+12424540853" class="text-slate-200 hover:text-teal-400 transition-colors">+1 (242) 454-0853</a></div>
+                    <div class="text-slate-500 text-xs mt-1">Calls & Direct Messaging</div>
+                </div>
+
+                <div>
+                    <div class="text-xs text-slate-500 uppercase tracking-wider mb-2">Email</div>
+                    <div><a href="mailto:info@bahamaswebservices.com" class="text-slate-200 hover:text-teal-400 transition-colors">info@bahamaswebservices.com</a></div>
+                    <div class="text-slate-500 text-xs mt-1">Response within 24 hours</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-slate-800 bg-slate-900 py-8">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono text-slate-500">
+            <div>&copy; Bahamas Web Services. All rights reserved.</div>
+            <div>Local Roots. Global Reach.</div>
+        </div>
+    </footer>
+
+</body>
+</html>
