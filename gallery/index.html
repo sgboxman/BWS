@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxman Pictures</title>
+    <meta name="description" content="Boxman Family Pictures">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <header class="gallery-header">
+    <h1 class="gallery-title">Boxman Pictures</h1>
+    
+    <p class="gallery-description">Boxman Family Pictures</p>
+    
+</header>
+
+<div class="masonry-grid" id="albums-grid">
+    <div class="grid-sizer"></div>
+    
+    <div class="grid-item album-card" data-album-id="Desktop Pics">
+        <a href="Desktop%20Pics/" class="album-link">
+            <div class="album-cover">
+                
+                
+                
+                
+                
+                
+                <img src="./static/thumbs/Desktop%20Pics/view4_medium.jpg"
+                     alt="view4"
+                     loading="lazy"
+                     onerror="this.style.display='none'; this.parentElement.classList.add('no-image');">
+                
+                
+                
+                <div class="album-info-overlay">
+                    <h2 class="album-title">Desktop Pics</h2>
+                    <div class="album-count">8 photos</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="grid-item album-card" data-album-id="Looch">
+        <a href="Looch/" class="album-link">
+            <div class="album-cover">
+                
+                
+                
+                
+                
+                
+                <img src="./static/thumbs/Looch/DSC_0185-ab-l_medium.jpg"
+                     alt="DSC_0185-ab-l"
+                     loading="lazy"
+                     onerror="this.style.display='none'; this.parentElement.classList.add('no-image');">
+                
+                
+                
+                <div class="album-info-overlay">
+                    <h2 class="album-title">Looch</h2>
+                    <div class="album-count">8 photos</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+</div>
+    </div>
+    
+    <footer class="gallery-footer">
+        <p>Gallery powered by <a href="https://github.com/chrissnell/purtypics" target="_blank">PurtyPics v1.0.9</a></p>
+    </footer>
+    
+    
+    
+    <script src="./js/masonry.pkgd.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/gallery.js"></script>
+</body>
+</html>
